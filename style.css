@@ -13,11 +13,10 @@ body {
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
 }
-center {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 75%; /* Adjust the width as needed */
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**
