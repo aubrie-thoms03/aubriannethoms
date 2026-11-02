@@ -92,7 +92,7 @@ blockquote p:last-child {
 
 body {
     /* Set the background image on the whole page */
-    background-image: url('your-image-filename.jpg'); 
+    background-image: url('background.jpeg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
