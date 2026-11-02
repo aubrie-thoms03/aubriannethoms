@@ -121,6 +121,14 @@ header, #content, footer {
   padding:25px;
   color:#FFFFFF; 
 }
+
+center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%; /* Adjust the width as needed */
+}
+
 iframe {
   max-width:100%;
 }
