@@ -90,12 +90,28 @@ blockquote p:last-child {
  * Layout styles
  */
 
-/* Full size background image */
-html, #container, .inner { background-color:transparent;}
-html {
-  background:url(background.jpg) center center no-repeat fixed;
-  background-size:cover;
+body {
+    /* Set the background image on the whole page */
+    background-image: url('your-image-filename.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    
+    /* Optional: Default text color for the page */
+    color: #ffffff; 
 }
+
+/* This creates a semi-transparent container so your text is readable over the image */
+.main-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.75); /* Dark transparent background */
+    border-radius: 8px;
+}
+
 body {
   max-width:800px;
   margin:25px auto;
