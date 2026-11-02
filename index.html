@@ -9,6 +9,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" type="image/png" href="logo.png">
     <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  /* Full‑page background */
+  background-image: url('background.jpeg');
+  background-size: cover;       /* cover the whole viewport */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat; /* avoid tiling */
+  background-attachment: fixed; /* keep it fixed while scrolling */
+  position: relative;           /* so content can sit on top */
+}
+/* Example content block */
+.content {
+  padding: 20px;
+  background-color: rgba(255,255,255,0.9); /* semi‑transparent overlay */
+  max-width: 800px;
+  margin: auto;
+}
+</style>
+    <style>
     body {
     background-image: url('background.jpeg');
     background-repeat: no-repeat;
