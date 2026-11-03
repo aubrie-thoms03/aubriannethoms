@@ -199,6 +199,17 @@ ul.main-menu li a.active {
   color: #FFFFFF;
   border-bottom-color: #EF6D3D;
 }
+ul {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "★"; /* Unicode star */
+  margin-right: 0.5em;
+  font-size: 1.2em;
+  color: #ffcc00; /* star color */
+}
 
 /* Utility classes */
 .hide {
