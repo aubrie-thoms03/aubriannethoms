@@ -118,6 +118,18 @@ iframe {
   max-width: 100%;
 }
 
+/* ADD THESE TWO BLOCKS AT THE TOP OF YOUR MENU CODE */
+ul.main-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;       /* Forces the list items to sit horizontally side-by-side */
+  list-style: none;    /* Strips away all bullet points entirely */
+}
+
+ul.main-menu li {
+  display: inline-block; /* Helps with clean horizontal layout calculation */
+}
+
 ul.main-menu li a {
   margin-right:20px;
   font-size:2.0rem;
