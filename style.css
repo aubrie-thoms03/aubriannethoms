@@ -98,20 +98,20 @@ blockquote p:last-child {
  * Layout Components
  */
 
-/* This transparent box is now exactly constrained to 800px wide and centered */
-.main-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.75); /* Dark transparent background */
-  border-radius: 8px;
-  box-sizing: border-box; /* Prevents padding from making the box wider than 800px */
-}
-
 header, #content, footer { 
   background: rgba(0,0,0,.8); 
   padding: 25px;
   color: #FFFFFF; 
+}
+
+#content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark transparent box */
+  border-radius: 8px;
+  box-sizing: border-box;       /* Prevents padding from breaking your 800px limit */
+  color: #FFFFFF;
 }
 
 iframe {
