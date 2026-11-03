@@ -171,6 +171,13 @@ iframe {
   100% { background-position: 100% 50%; }
 }
 
+ul.starred li::before {
+    content: "★";
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
 /* Adjusts the menu layout to run flush along the left wall */
 ul.main-menu {
   margin: 0;
@@ -204,12 +211,6 @@ ul {
   padding-left: 0;
 }
 
-ul.starred li::before {
-    content: "★";
-    margin-right: 0.5em;
-    font-size: 1.2em;
-    color: #ffcc00;
-}
 /* Utility classes */
 .hide {
   display: none;
