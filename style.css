@@ -118,11 +118,6 @@ body {
     background-color: rgba(0, 0, 0, 0.75); /* Dark transparent background */
     border-radius: 8px;
 }
-
-body {
-  max-width:800px;
-  margin:25px auto;
-}
 header, #content, footer { 
   background: rgba(0,0,0,.8); 
   padding:25px;
