@@ -14,32 +14,27 @@ html, body {
   padding: 0;
   height: 100%;
 }
+
 body {
-  /* Full‑page background */
   background-image: url('background.jpeg');
-  background-size: cover;       /* cover the whole viewport */
-  background-position: center;  /* center the image */
-  background-repeat: no-repeat; /* avoid tiling */
-  background-attachment: fixed; /* keep it fixed while scrolling */
-  position: relative;           /* so content can sit on top */
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF; /* White text looks best on dark transparent containers */
 }
-/* Example content block */
+
 .content {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* semi‑transparent overlay */
   max-width: 800px;
-  margin: auto;
+  margin: 40px auto; /* Centers the box and adds spacing at the top/bottom */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark transparent box so white text is readable */
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't push the width past 800px */
 }
-</style>
-    <style>
-    body {
-    background-image: url('background.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* optional: keeps image fixed on scroll */
-    }
-    </style>
+
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
