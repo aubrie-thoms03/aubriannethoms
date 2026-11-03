@@ -109,24 +109,24 @@ footer {
   color: #FFFFFF; 
 }
 
-/* ==========================================================================
-   Main Layout Container (Brings your box back, centers it, and clamps it to 800px)
-   ========================================================================== */
-#content {
+#container {
   max-width: 800px;
   margin: 40px auto;            /* Centers the entire box on your background screen */
-  padding: 30px;                /* Adds internal breathing room around all your text */
-  background-color: rgba(0, 0, 0, 0.75); /* Brings back your dark transparent glass panel */
+  padding: 30px;                /* Adds internal breathing room around your layout */
+  background-color: rgba(0, 0, 0, 0.75); /* Restores your dark transparent background glass panel */
   border-radius: 8px;
   box-sizing: border-box;       /* Prevents padding from breaking your 800px limit */
   color: #FFFFFF;
 }
 
-/* ==========================================================================
-   Header & Left-Aligned Navigation
-   ========================================================================== */
+/* Strips any conflicting default parameters from the interior #content wrapper */
+#content {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
 
-/* Reset header default values so it inherits the container box traits cleanly */
+
 #header {
   background: transparent;      /* Stops a secondary background block from forming */
   padding: 10px 0 20px 0;       /* Adds padding inside the container box */
@@ -137,13 +137,11 @@ footer {
   box-sizing: border-box;
 }
 
-/* Styles your logo to stack cleanly on top */
 #header img[alt="Logo"] {
   display: block;
-  margin-bottom: 15px;          /* Adds breathing room below the logo before the title starts */
+  margin-bottom: 15px;         
 }
 
-/* Left aligns the title text line */
 #header h1 {
   text-align: left;             /* Forces your name text to sit flush left */
   margin-bottom: 2rem;
