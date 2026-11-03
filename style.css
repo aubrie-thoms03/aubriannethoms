@@ -152,6 +152,25 @@ iframe {
   max-width: 100%;
 }
 
+.glitter-text {
+  background: linear-gradient(
+    45deg,
+    #ffd700,
+    #ff69b4,
+    #00bfff,
+    #90ee90
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: glitter 5s ease infinite;
+}
+
+@keyframes glitter {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
 /* Adjusts the menu layout to run flush along the left wall */
 ul.main-menu {
   margin: 0;
