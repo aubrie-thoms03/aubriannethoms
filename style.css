@@ -109,6 +109,23 @@ footer {
   color: #FFFFFF; 
 }
 
+/* ==========================================================================
+   Main Layout Container (Brings your box back, centers it, and clamps it to 800px)
+   ========================================================================== */
+#content {
+  max-width: 800px;
+  margin: 40px auto;            /* Centers the entire box on your background screen */
+  padding: 30px;                /* Adds internal breathing room around all your text */
+  background-color: rgba(0, 0, 0, 0.75); /* Brings back your dark transparent glass panel */
+  border-radius: 8px;
+  box-sizing: border-box;       /* Prevents padding from breaking your 800px limit */
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   Header & Left-Aligned Navigation
+   ========================================================================== */
+
 /* Reset header default values so it inherits the container box traits cleanly */
 #header {
   background: transparent;      /* Stops a secondary background block from forming */
@@ -143,33 +160,33 @@ ul.main-menu {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;  /* Left-aligns your navigation links */
+  justify-content: flex-start;  /* Left-aligns your navigation links inside the container */
   list-style: none;
   width: 100%;
 }
 
 ul.main-menu li {
-  display: inline-block; /* Helps with clean horizontal layout calculation */
+  display: inline-block;        /* Helps with clean horizontal layout calculation */
 }
 
 ul.main-menu li a {
-  margin-right:20px;
-  font-size:2.0rem;
+  margin-right: 20px;
+  font-size: 2.0rem;
   border-bottom: solid transparent 3px;
-  color:#cfd2da;
+  color: #cfd2da;
 }
 ul.main-menu li a:hover {
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
 ul.main-menu li a.active {
-  color:#FFFFFF;
-  border-bottom-color:#EF6D3D;
+  color: #FFFFFF;
+  border-bottom-color: #EF6D3D;
 }
 
 /* Utility classes */
 .hide {
-  display:none;
+  display: none;
 }
 .show {
-  display:block;
+  display: block;
 }
