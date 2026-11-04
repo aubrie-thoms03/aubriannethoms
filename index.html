@@ -305,26 +305,24 @@
           <div id="contact" class="content-region hide">
             <h2 style="text-align: center;">contact me!</h2>
              <img src="contact.png" alt="contact" style="width:400px;height:400px;" class="centered">
-<body style="margin:0; padding:0; background-image: url('space.gif'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh; font-family:Arial, sans-serif;">
-
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding: 40px 0;">
-    <tr>
-      <td align="center">
-        <table width="550" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse; background-color: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; overflow:hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+        <table width="550" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse; background-image: url('space.gif'); background-size: cover; background-position: center; background-repeat: no-repeat; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; overflow:hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
           
+          <!-- Header Bar (Slightly transparent overlay box on top of the GIF background) -->
           <tr>
-            <td style="background-color: rgba(0, 0, 0, 0.4); padding:20px; text-align:center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="background-color: rgba(0, 0, 0, 0.6); padding:20px; text-align:center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
               <h1 style="color:#ffffff; margin:0; font-size:20px; font-weight:bold; letter-spacing: 0.5px;">Compose Message</h1>
             </td>
           </tr>
     
+          <!-- Interactive Form Body Area (Using translucent black overlay so text stays readable over the box's inner GIF) -->
           <tr>
-            <td style="padding:30px;">
-              <form action="athoms2025@my.fit.edu" method="GET" enctype="text/plain">
+            <td style="padding:30px; background-color: rgba(0, 0, 0, 0.75);">
+              
+              <!-- Fix: Added mailto: protocol prefix to ensure email handler recognizes destination -->
+              <form action="mailto:athoms2025@my.fit.edu" method="GET" enctype="text/plain">
                 
                 <!-- Subject Line Input -->
                 <div style="margin-bottom: 20px;">
-                  <!-- 3. Labels changed to white text -->
                   <label for="subject" style="display:block; font-size:14px; font-weight:bold; color:#ffffff; margin-bottom:8px;">Subject Line:</label>
                   <input type="text" id="subject" name="subject" value="Important Update" style="width:100%; box-sizing:border-box; padding:12px; font-size:16px; border:1px solid rgba(255, 255, 255, 0.3); border-radius:4px; font-family:Arial, sans-serif; background-color: rgba(255, 255, 255, 0.1); color: #ffffff;" required>
                 </div>
@@ -339,7 +337,6 @@ speak now or forever hold your peace</textarea>
                 
                 <!-- Send Button -->
                 <div style="text-align:center;">
-                  <!-- 4. Button background changed to solid orange (#ff6600) with white text -->
                   <button type="submit" style="background-color:#ff6600; color:#ffffff; font-size:16px; font-weight:bold; padding:12px 40px; border:none; border-radius:4px; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.3); transition: background-color 0.2s;">
                     hasta la vista (send)
                   </button>
@@ -349,11 +346,10 @@ speak now or forever hold your peace</textarea>
             </td>
           </tr>
         </table>
+        
       </td>
     </tr>
   </table>
-
-</body>
 
 
           </div>
