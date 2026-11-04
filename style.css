@@ -220,12 +220,14 @@ ul {
 }
 
 /* --- Global Responsive Base Formatting Rules --- */
+
 #container {
-  width: 100%;
-  max-width: 960px; /* Caps desktop width cleanly while flexing downward on phones */
-  margin: 0 auto;
+  width: 95%;             
+  max-width: 1100px;      
+  margin: 40px auto;     
   box-sizing: border-box;
 }
+
 
 .inner {
   padding: 0 15px; /* Keeps text fields from kissing screen edges on phones */
@@ -305,11 +307,7 @@ ul {
   }
 }
 
-/* ==========================================================================
-   UPDATED MOBILE FRIENDLY ADDITION (Fixes the Left-Smush Error)
-   ========================================================================== */
 
-/* Forces ALL images on the website to never push past the screen width */
 img {
   max-width: 100% !important;
 }
