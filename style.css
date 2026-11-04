@@ -235,7 +235,7 @@ ul {
 
 /* Forces all site assets, images, and GIFs to scale contextually down inside boxes */
 .fluid-img {
-  width: 100% !important;
+  max-width: 100% !important;
   height: auto !important;
   display: block;
 }
@@ -316,9 +316,10 @@ img {
   max-width: 100% !important;
 }
 
+
 @media screen and (max-width: 768px) {
   
-
+ 
   #container {
     width: 90% !important;
     max-width: 100% !important;
@@ -327,10 +328,11 @@ img {
     float: none !important;
   }
 
-
+ 
   #content .content-region img, 
-  #content img.centered {
-    width: 100% !important;
+  #content img.centered,
+  .fluid-img {
+    width: 100% !important; 
     max-width: 100% !important;
     height: auto !important; 
     float: none !important;
@@ -338,13 +340,13 @@ img {
     display: block !important;
   }
 
-
+  
   #header img[alt="Logo"],
   #header .logo-img {
-    width: 50px !important;    /* Forces icon size down to 50px */
+    width: 50px !important;    
     max-width: 50px !important;
     height: auto !important;
-    margin: 0 auto 10px auto !important; /* Centers image horizontal layout */
+    margin: 0 auto 10px auto !important; 
     display: block !important;
   }
   
@@ -352,6 +354,7 @@ img {
     text-align: center !important;
   }
 
+  
   #contact table,
   #container table,
   table[width="550"] {
@@ -360,14 +363,14 @@ img {
     float: none !important;
     width: 100% !important;
     max-width: 550px !important; 
-    display: table !important; /* Forces layout tracking to treat it as an explicit table element */
+    display: table !important; 
   }
 
   #contact form {
     text-align: left !important;
   }
 
-
+  
   ul.main-menu {
     justify-content: center !important;
   }
@@ -382,7 +385,7 @@ img {
     font-size: 2.2rem !important;
   }
 
-  
+ 
   body {
     background-attachment: scroll !important;
     background-position: center center !important;
