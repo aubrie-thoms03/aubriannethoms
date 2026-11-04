@@ -110,6 +110,7 @@ footer {
 }
 
 #container {
+  width: 100%;
   max-width: 800px;
   margin: 40px auto;            /* Centers the entire box on your background screen */
   padding: 30px;                /* Adds internal breathing room around your layout */
@@ -125,7 +126,6 @@ footer {
   padding: 0;
   margin: 0;
 }
-
 
 #header {
   background: transparent;      /* Stops a secondary background block from forming */
