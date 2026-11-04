@@ -244,6 +244,9 @@ ul {
 .main-hero-img { max-width: 600px; }
 .timeline-gif { max-width: 700px; }
 .outreach-img { max-width: 400px; }
+.research-img { max-width: 500px; }
+.publication-img { max-width: 500px; }
+.contact-img { max-width: 400px; }
 
 /* Structural layout block handles image wrap elegantly */
 .profile-block {
