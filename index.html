@@ -305,50 +305,54 @@
           <div id="contact" class="content-region hide">
             <h2 style="text-align: center;">contact me!</h2>
              <img src="contact.png" alt="contact" style="width:400px;height:400px;" class="centered">
-        <td align="center" style="padding: 20px;">
-          <table width="550" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse; background-image: url('space.gif'); background-size: cover; background-position: center; background-repeat: no-repeat; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; overflow:hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-          
-          <tr>
-            <td style="background-color: rgba(0, 0, 0, 0.6); padding:20px; text-align:center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
-              <h1 style="color:#ffffff; margin:0; font-size:20px; font-weight:bold; letter-spacing: 0.5px;">contact</h1>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:30px; background-color: rgba(0, 0, 0, 0.75);">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center" style="padding: 20px;">
+      
+      <!-- This inner table handles the 550px box layout and centers due to the td align="center" above -->
+      <table width="550" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse; background-image: url('space.gif'); background-size: cover; background-position: center; background-repeat: no-repeat; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; overflow:hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        
+        <tr>
+          <td style="background-color: rgba(0, 0, 0, 0.6); padding:20px; text-align:center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <h1 style="color:#ffffff; margin:0; font-size:20px; font-weight:bold; letter-spacing: 0.5px;">contact</h1>
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="padding:30px; background-color: rgba(0, 0, 0, 0.75);">
+            
+            <form action="mailto:athoms2025@my.fit.edu" method="GET" enctype="text/plain">
               
-              <!-- Fix: Added mailto: protocol prefix to ensure email handler recognizes destination -->
-              <form action="mailto:athoms2025@my.fit.edu" method="GET" enctype="text/plain">
-                
-                <!-- Subject Line Input -->
-                <div style="margin-bottom: 20px;">
-                  <label for="subject" style="display:block; font-size:14px; font-weight:bold; color:#ffffff; margin-bottom:8px;">Subject Line:</label>
-                  <input type="text" id="subject" name="subject" value="the who, what, when, where, why, and how" style="width:100%; box-sizing:border-box; padding:12px; font-size:16px; border:1px solid rgba(255, 255, 255, 0.3); border-radius:4px; font-family:Arial, sans-serif; background-color: rgba(255, 255, 255, 0.1); color: #ffffff;" required>
-                </div>
-                
-                <!-- Body Text Input Area -->
-                <div style="margin-bottom: 25px;">
-                  <label for="body" style="display:block; font-size:14px; font-weight:bold; color:#ffffff; margin-bottom:8px;">Message Body:</label>
-                  <textarea id="body" name="body" rows="6" style="width:100%; box-sizing:border-box; padding:12px; font-size:16px; border:1px solid rgba(255, 255, 255, 0.3); border-radius:4px; font-family:Arial, sans-serif; resize:vertical; background-color: rgba(255, 255, 255, 0.1); color: #ffffff;" required>salutations,
+              <!-- Subject Line Input -->
+              <div style="margin-bottom: 20px;">
+                <label for="subject" style="display:block; font-size:14px; font-weight:bold; color:#ffffff; margin-bottom:8px;">Subject Line:</label>
+                <input type="text" id="subject" name="subject" value="the who, what, when, where, why, and how" style="width:100%; box-sizing:border-box; padding:12px; font-size:16px; border:1px solid rgba(255, 255, 255, 0.3); border-radius:4px; font-family:Arial, sans-serif; background-color: rgba(255, 255, 255, 0.1); color: #ffffff;" required>
+              </div>
+              
+              <!-- Body Text Input Area -->
+              <div style="margin-bottom: 25px;">
+                <label for="body" style="display:block; font-size:14px; font-weight:bold; color:#ffffff; margin-bottom:8px;">Message Body:</label>
+                <textarea id="body" name="body" rows="6" style="width:100%; box-sizing:border-box; padding:12px; font-size:16px; border:1px solid rgba(255, 255, 255, 0.3); border-radius:4px; font-family:Arial, sans-serif; resize:vertical; background-color: rgba(255, 255, 255, 0.1); color: #ffffff;" required>salutations,
 
 speak now or forever hold your peace</textarea>
-                </div>
-                
-                <!-- Send Button -->
-                <div style="text-align:center;">
-                  <button type="submit" style="background-color:#ff6600; color:#ffffff; font-size:16px; font-weight:bold; padding:12px 40px; border:none; border-radius:4px; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.3); transition: background-color 0.2s;">
-                    hasta la vista (send)
-                  </button>
-                </div>
+              </div>
+              
+              <!-- Send Button -->
+              <div style="text-align:center;">
+                <button type="submit" style="background-color:#ff6600; color:#ffffff; font-size:16px; font-weight:bold; padding:12px 40px; border:none; border-radius:4px; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.3); transition: background-color 0.2s;">
+                  hasta la vista (send)
+                </button>
+              </div>
 
-              </form>
-            </td>
-          </tr>
-        </table>
-        
-      </td>
-    </tr>
-  </table>
-   </td>
+            </form>
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+
 
 
           </div>
