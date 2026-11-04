@@ -349,3 +349,15 @@ img {
     text-align: center !important;
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+
+    background-attachment: scroll !important;
+    
+    
+    background-position: center center !important;
+    
+
+    background-size: cover !important;
+  }
+}
