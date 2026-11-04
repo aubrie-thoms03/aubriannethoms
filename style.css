@@ -218,3 +218,89 @@ ul {
 .show {
   display: block;
 }
+
+/* --- Global Responsive Base Formatting Rules --- */
+#container {
+  width: 100%;
+  max-width: 960px; /* Caps desktop width cleanly while flexing downward on phones */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.inner {
+  padding: 0 15px; /* Keeps text fields from kissing screen edges on phones */
+}
+
+/* Forces all site assets, images, and GIFs to scale contextually down inside boxes */
+.fluid-img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+/* Set comfortable max limits for your wide layout layouts */
+.main-hero-img { max-width: 600px; }
+.timeline-gif { max-width: 700px; }
+.outreach-img { max-width: 400px; }
+
+/* Structural layout block handles image wrap elegantly */
+.profile-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.profile-img {
+  width: 380px;
+  height: auto;
+  margin-right: 25px;
+  border-radius: 4px;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.story-text {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+/* --- Mobile Specific Overrides (Screens under 768px wide) --- */
+@media screen and (max-width: 768px) {
+  
+  /* Menu breaks out into vertical list items if screen horizontal limits are reached */
+  .main-menu {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .main-menu li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* Shifts sidebar layout blocks into stacked presentation format on phones */
+  .profile-block {
+    display: block; 
+  }
+  
+  .profile-img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
