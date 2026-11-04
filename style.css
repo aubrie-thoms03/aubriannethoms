@@ -305,22 +305,38 @@ ul {
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* ==========================================================================
+   UPDATED MOBILE FRIENDLY ADDITION (Fixes the Left-Smush Error)
+   ========================================================================== */
 
+/* Forces ALL images on the website to never push past the screen width */
+img {
+  max-width: 100% !important;
+}
 
 @media screen and (max-width: 768px) {
   
-  /* Forces your main container to fit perfectly on small screens */
+
   #container {
-    width: 100% !important;
-    margin: 10px auto !important;
-    padding: 15px !important;
+    width: 90% !important;
+    max-width: 100% !important;
+    margin: 20px auto !important;
+    padding: 20px !important;
+    float: none !important;
   }
 
-  
+
+  #container img, 
+  .content-region img, 
+  .centered {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important; /* Prevents images from distorting or squishing */
+    float: none !important;
+    margin: 0 auto 15px auto !important;
+  }
+
+
   ul.main-menu {
     justify-content: center !important;
   }
@@ -332,32 +348,14 @@ img {
   }
   ul.main-menu li a {
     margin-right: 0 !important;
+    font-size: 2.2rem !important;
   }
 
- 
-  .profile-block {
-    display: block !important;
-  }
-  .profile-img {
-    width: 100% !important;
-    max-width: 320px !important;
-    margin: 0 auto 20px auto !important;
-  }
   
- 
-  h1, h2 {
-    text-align: center !important;
-  }
-}
-@media screen and (max-width: 768px) {
   body {
-
     background-attachment: scroll !important;
-    
-    
     background-position: center center !important;
-    
-
     background-size: cover !important;
   }
 }
+
