@@ -304,3 +304,48 @@ ul {
     text-align: center;
   }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  /* Forces your main container to fit perfectly on small screens */
+  #container {
+    width: 100% !important;
+    margin: 10px auto !important;
+    padding: 15px !important;
+  }
+
+  
+  ul.main-menu {
+    justify-content: center !important;
+  }
+  ul.main-menu li {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 8px 0 !important;
+  }
+  ul.main-menu li a {
+    margin-right: 0 !important;
+  }
+
+ 
+  .profile-block {
+    display: block !important;
+  }
+  .profile-img {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto 20px auto !important;
+  }
+  
+ 
+  h1, h2 {
+    text-align: center !important;
+  }
+}
